@@ -2,7 +2,7 @@ Classic Arcade Game Project
 ===============================
 
 This is a simple arcade game called **Frogger**.
-In order to run the game please open the file index.html in your browser.
+In order to run the game please open the file [index.html](index.html) in your browser.
 
 ##Objective of the game:
 The player must cross the path to reach the river in order to win the game. The moving bugs are the enemies hitting to which the player dies and starts from the beginning.
