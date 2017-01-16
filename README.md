@@ -5,12 +5,14 @@ Students should use this [rubric](https://review.udacity.com/#!/projects/2696458
 
 For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
 ######Classic Arcade Game Project
-This is a simmple arcade game called **Frogger**.
+===============================
+
+This is a simple arcade game called **Frogger**.
 In order to run the game please open the file index.html in your browser.
 
 ##Objective of the game:
 The player must cross the path to reach the river in order to win the game. The moving bugs are the enemies hitting to which the player dies and starts from the beginning.
 
 ##Steps for playing the game:
--Use the `_Up_`, `_Down_`, `_Left_` and `_Right_` keys to move the player in the game in the corresponding direction.
--Beware of the bugs and use the direction keys to dodge the player from hitting them.
+- Use the ` _Up_ `, ` _Down_ `, ` _Left_ ` and ` _Right_ ` keys to move the player in the game in the corresponding direction.
+- Beware of the bugs and use the direction keys to dodge the player from hitting them.
