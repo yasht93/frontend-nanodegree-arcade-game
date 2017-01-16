@@ -1,4 +1,4 @@
-######Classic Arcade Game Project
+Classic Arcade Game Project
 ===============================
 
 This is a simple arcade game called **Frogger**.
