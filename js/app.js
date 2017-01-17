@@ -35,9 +35,10 @@ Enemy.prototype.update = function(dt) {
     else if(this.x <= 500) {
         this.x = this.x + (this.speed *dt);
     }
-    //to reset on colliding with the enemy
+    //to reset on colliding with the enemy (bug)
     if(player.x >= this.x - 35 && player.x <= this.x + 35 && player.y >= this.y - 25 && player.y <= this.y + 25) {
         this.reset();
+        //to check whether the player collided with an enemy (bug)
         console.log('Lose!');
     }
 }
@@ -61,21 +62,25 @@ var Player = function() {
 
 //update function for player
 Player.prototype.update = function() {
-    console.log(this.x, this.y);
+    console.log("Player's location: x:", this.x, ", y:",  this.y);
 }
 
 //handleInput function
 Player.prototype.handleInput = function(e) {
     this.keyHit = e;
+    //check for upper limit and restrict further upper movement
     if(this.keyHit === 'up' && this.y >= 0) {
         this.y = this.y - 50;
     }
+    //check for lower limit and restrict further lower movement
     else if(this.keyHit === 'down' && this.y <400) {
         this.y = this.y + 50;
     }
+    //check for leftmost limit and restrict further leftward movement
     else if(this.keyHit === 'left' && this.x > 0) {
         this.x = this.x - 50;
     }
+    //check for rightmost limit and restrict further rigtward movement
     else if(this.keyHit === 'right' && this.x < 400) {
         this.x = this.x + 50;
     }
@@ -91,10 +96,9 @@ Player.prototype.handleInput = function(e) {
 
 // Place all enemy objects in an array called allEnemies
 var allEnemies = [];
+
 //for pushing new enemies
 allEnemies.push(new Enemy(-10, 50), new Enemy(-5, 105), new Enemy(-5, 160), new Enemy(-10, 200), new Enemy(-5, 250));
-
-// Now instantiate your objects.
 
 //instantiating a new player
 var player = new Player();
